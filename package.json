@@ -1,0 +1,16 @@
+{
+  "name": "brandonallison-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal portfolio frontend for Brandon Allison",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs --dist",
+    "build": "node scripts/build.mjs",
+    "check": "node --check assets/theme.js && node --check assets/main.js && node --check scripts/serve.mjs && node --check scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
