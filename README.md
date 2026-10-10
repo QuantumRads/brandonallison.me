@@ -64,14 +64,14 @@ vite.config.js             React/Vite development configuration
 
 ## Customize
 
-- Edit `src/data/portfolio.js` for your profile, GitHub link, capabilities, experience, projects, education, and certifications. The current Optara role comes from Brandon's update; earlier experience and projects come from his supplied resume.
+- Edit `src/data/portfolio.js` for your profile, contact links, capabilities, experience, company name history, projects, education, and certifications. The current Optara role comes from Brandon's update; earlier experience and projects come from his supplied resume.
 - Edit the individual React components for layout and section wording. The hero and project artwork are made in CSS and need no external images.
 - Change the theme variables in `src/styles.css` to adjust the palette.
-- Add a contact email or other links in `src/components/Contact.jsx` when ready.
+- Update the email, LinkedIn, and GitHub URLs in `src/data/portfolio.js`; contact layout is in `src/components/Contact.jsx`.
 - Update the title and description in `src/index.html`, and replace `public/favicon.svg` if needed.
 - Run `npm run build` after edits to regenerate the page you open directly.
 
-Current-role start dates and the end date for VP Demand Creation Services need an update before displaying full employment ranges. Earlier certifications are labeled by earned year, rather than implying current certification status. A public contact email can be added when Brandon supplies one; the legacy resume's address, phone number, and email are not embedded in this site.
+The Optara entry shows Brandon's company tenure from 2018, with the INCTech, Synpact, and Optara name changes underneath his current role. The end date for VP Demand Creation Services still needs confirmation before displaying a full employment range. Earlier certifications are labeled by earned year, rather than implying current certification status. The contact email is the address Brandon supplied for public use; the legacy resume's address, phone number, and email are not embedded in this site.
 
 The visitor's theme choice is remembered when browser storage is available. The theme control also works when local-file browser storage is restricted. A skip link, keyboard focus states, an Escape-to-close mobile menu, and reduced-motion support are included.
 

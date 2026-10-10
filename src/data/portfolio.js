@@ -6,6 +6,7 @@ export const profile = {
   domain: 'brandonallison.me',
   github: 'https://github.com/QuantumRads',
   linkedin: 'https://www.linkedin.com/in/brandon-allison-2aa263127',
+  email: 'brandon@brandonallison.me',
   title: 'NetOps Engineer',
   company: 'Optara',
   intro: 'I design networks, manage Microsoft cloud environments, and troubleshoot the systems people rely on.',
@@ -57,7 +58,12 @@ export const capabilities = [
 
 export const experience = [
   {
-    id: 'optara', title: 'NetOps Engineer', company: 'Optara', period: 'Current role', current: true,
+    id: 'optara', title: 'NetOps Engineer', company: 'Optara', period: '2018–present', periodLabel: 'Company tenure', current: true,
+    companyHistory: [
+      { name: 'INCTech', period: '2018–2021' },
+      { name: 'Synpact', period: '2021–2025' },
+      { name: 'Optara', period: '2025–present' },
+    ],
     summary: 'A broad engineering role within a four-person MSP technical team, covering client environments and internal operations.',
     responsibilities: [
       'Troubleshoot client issues and design local networks.',
