@@ -31,7 +31,7 @@ export default function Header({ theme, toggleTheme }) {
   }, [open]);
 
   useEffect(() => {
-    const query = window.matchMedia('(min-width: 701px)');
+    const query = window.matchMedia('(min-width: 901px)');
     const closeOnDesktop = () => { if (query.matches) setOpen(false); };
     query.addEventListener('change', closeOnDesktop);
     return () => query.removeEventListener('change', closeOnDesktop);

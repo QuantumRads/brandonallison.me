@@ -17,6 +17,7 @@ export const navigation = [
   { label: 'Expertise', href: '#expertise' },
   { label: 'Experience', href: '#experience' },
   { label: 'Work', href: '#projects' },
+  { label: 'Certifications', href: '#certifications' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -127,10 +128,14 @@ export const education = {
   completed: '2018',
 };
 
-// Historical earned dates are preserved; current certification status is unconfirmed.
-export const credentials = [
-  { title: 'CompTIA A+', earned: '2015' },
-  { title: 'CompTIA Network+', earned: '2017' },
-  { title: 'CompTIA Security+', earned: '2018' },
+// Historical earned dates from the resume; these do not imply current status.
+// The Server Administration year is incomplete in the source, so it is omitted.
+export const certifications = [
+  { id: 'comptia-a-plus', issuer: 'CompTIA', title: 'CompTIA A+', earned: '2015' },
+  { id: 'comptia-network-plus', issuer: 'CompTIA', title: 'CompTIA Network+', earned: '2017' },
+  { id: 'comptia-security-plus', issuer: 'CompTIA', title: 'CompTIA Security+', earned: '2018' },
+  { id: 'mta-networking', issuer: 'Microsoft', title: 'MTA: Networking Fundamentals', earned: '2016' },
+  { id: 'mta-windows', issuer: 'Microsoft', title: 'MTA: Windows OS Fundamentals', earned: '2017' },
+  { id: 'mta-server', issuer: 'Microsoft', title: 'MTA: Server Administration Fundamentals', earned: null },
+  { id: 'mta-security', issuer: 'Microsoft', title: 'MTA: Security Fundamentals', earned: '2017' },
 ];
-export const microsoftFoundations = ['Networking', 'Windows OS', 'Server administration', 'Security'];

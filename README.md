@@ -47,12 +47,13 @@ src/
     Expertise.jsx          Current capabilities and technical focus
     Experience.jsx         Optara and earlier technical roles
     Projects.jsx           Earlier infrastructure work and personal projects
-    Education.jsx          Education and dated early credentials
+    Certifications.jsx     Individual CompTIA and Microsoft MTA credentials
+    Education.jsx          College education
     Contact.jsx            Contact links
     Footer.jsx             Footer and back-to-top link
     SectionHeading.jsx     Shared section heading
     Icon.jsx               Shared SVG icons
-  data/portfolio.js        Profile, capabilities, experience, and project content
+  data/portfolio.js        Profile, experience, projects, education, and certifications
   hooks/useTheme.js        React theme state and persistence
 public/
   favicon.svg              Blue initials favicon
@@ -63,7 +64,7 @@ vite.config.js             React/Vite development configuration
 
 ## Customize
 
-- Edit `src/data/portfolio.js` for your profile, GitHub link, capabilities, experience, projects, and education. The current Optara role comes from Brandon's update; earlier experience and projects come from his supplied resume.
+- Edit `src/data/portfolio.js` for your profile, GitHub link, capabilities, experience, projects, education, and certifications. The current Optara role comes from Brandon's update; earlier experience and projects come from his supplied resume.
 - Edit the individual React components for layout and section wording. The hero and project artwork are made in CSS and need no external images.
 - Change the theme variables in `src/styles.css` to adjust the palette.
 - Add a contact email or other links in `src/components/Contact.jsx` when ready.
