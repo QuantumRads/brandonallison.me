@@ -16,6 +16,7 @@ export default function Icon({ name, size = 20, ...props }) {
     award: <><circle cx="12" cy="8" r="6" /><path d="m8 13-2 9 6-3 6 3-2-9" /><path d="m9.5 8 1.7 1.7L15 6" /></>,
     plan: <><rect x="4" y="4" width="16" height="18" rx="2" /><path d="M9 2h6v4H9zM8 11h1m3 0h4M8 16h1m3 0h4" /></>,
     plus: <path d="M12 5v14M5 12h14" />,
+    linkedin: <><rect x="3" y="3" width="18" height="18" rx="2" /><circle cx="7.5" cy="7.5" r=".6" fill="currentColor" /><path d="M7.5 11v6.5M11.5 17.5V11m0 3a3 3 0 0 1 6 0v3.5" /></>,
     github: <path d="M9 19c-4.3 1.3-4.3-2.2-6-2.6m12 5v-3.9a3.4 3.4 0 0 0-1-2.7c3.3-.4 6.7-1.6 6.7-7.3a5.7 5.7 0 0 0-1.5-4 5.3 5.3 0 0 0-.1-4s-1.2-.4-4.1 1.5a14.1 14.1 0 0 0-7.4 0C4.7-.9 3.5-.5 3.5-.5a5.3 5.3 0 0 0-.1 4 5.7 5.7 0 0 0-1.5 4c0 5.7 3.4 6.9 6.7 7.3a3.4 3.4 0 0 0-1 2.7v3.9" transform="translate(1 2) scale(.9)" />,
   };
   return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>{paths[name]}</svg>;

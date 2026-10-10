@@ -5,6 +5,7 @@ export const profile = {
   handle: 'QuantumRads',
   domain: 'brandonallison.me',
   github: 'https://github.com/QuantumRads',
+  linkedin: 'https://www.linkedin.com/in/brandon-allison-2aa263127',
   title: 'NetOps Engineer',
   company: 'Optara',
   intro: 'I design networks, manage Microsoft cloud environments, and troubleshoot the systems people rely on.',
