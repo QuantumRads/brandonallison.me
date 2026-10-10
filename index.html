@@ -4,66 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark light" />
-    <meta name="description" content="The personal portfolio of Brandon Allison. A home for projects, experiments, and ideas." />
+    <meta name="theme-color" content="#090d18" />
+    <meta name="description" content="Brandon Allison's personal portfolio. A home for projects, experiments, and ideas." />
     <title>Brandon Allison — Personal Portfolio</title>
-    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
-    <script src="./assets/theme.js"></script>
-    <link rel="stylesheet" href="./assets/styles.css" />
-    <script src="./assets/main.js" defer></script>
+    <link rel="icon" href="%BASE_URL%favicon.svg" type="image/svg+xml" />
+    <script src="%BASE_URL%theme.js" vite-ignore></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header container">
-      <a class="wordmark" href="#home" aria-label="Brandon Allison, home">BA<span aria-hidden="true">.</span></a>
-      <div class="header-actions">
-        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
-        </nav>
-        <button class="theme-toggle" type="button" hidden aria-label="Switch to light theme" title="Switch to light theme">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
-        </button>
-        <button class="menu-toggle" type="button" hidden aria-expanded="false" aria-controls="site-nav">Menu</button>
-      </div>
-    </header>
-    <main id="main" tabindex="-1">
-      <section class="hero container" id="home" aria-labelledby="hero-heading">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Personal portfolio / V.01</p>
-          <h1 id="hero-heading">Brandon<br />Allison<span class="accent">.</span></h1>
-          <p class="hero-description">A place for my projects,<br class="desktop-break" /> experiments, and ideas.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="https://github.com/QuantumRads">Find me on GitHub <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-        <div class="identity-art" aria-hidden="true">
-          <div class="art-topline"><span>BA / PERSONAL SPACE</span><span>001</span></div>
-          <div class="art-monogram">ba<span>.</span></div>
-          <div class="art-bottomline"><span>ALWAYS A WORK IN PROGRESS</span><span>↗</span></div>
-        </div>
-        <div class="hero-footnote"><span>brandonallison.me</span><a href="#about">A little more below <span aria-hidden="true">↓</span></a></div>
-      </section>
-      <section class="section container about-section" id="about" aria-labelledby="about-heading">
-        <div class="section-label"><span>01 / ABOUT</span><h2 id="about-heading">A little about me.</h2></div>
-        <div class="section-content"><p class="large-copy">A personal home on the web.</p><p>I'm Brandon Allison. This portfolio is taking shape, with room for projects, things I'm exploring, and more about me.</p><p class="muted">More to come as I build this out.</p></div>
-      </section>
-      <section class="section container projects-section" id="projects" aria-labelledby="projects-heading">
-        <div class="section-title-row"><div class="section-label"><span>02 / PROJECTS</span><h2 id="projects-heading">Work in progress.</h2></div><a class="text-link" href="https://github.com/QuantumRads?tab=repositories">All repositories <span aria-hidden="true">↗</span></a></div>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-cover portfolio-cover" aria-hidden="true"><span class="cover-address">brandonallison.me</span><span class="cover-mark">BA<span>.</span></span><span class="cover-caption">A PERSONAL HOME ON THE WEB</span></div>
-            <div class="project-details"><div class="project-meta"><span>01 / WEBSITE</span><span class="badge">In progress</span></div><h3><a href="https://github.com/QuantumRads/brandonallison.me">Personal portfolio <span aria-hidden="true">↗</span></a></h3><p>The site you're looking at. A lightweight foundation that can grow with my work.</p><ul class="tags" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
-          </article>
-          <article class="project-card placeholder-card"><div class="placeholder-content"><span class="placeholder-symbol" aria-hidden="true">+</span><p class="eyebrow">ROOM FOR WHAT'S NEXT</p><h3>More projects, soon.</h3><p>New work will find its home here.</p></div></article>
-        </div>
-      </section>
-      <section class="section container contact-section" id="contact" aria-labelledby="contact-heading">
-        <div class="section-label"><span>03 / CONTACT</span><h2 id="contact-heading">Let's connect<span class="accent">.</span></h2></div>
-        <div class="section-content"><p>Find me online and follow what I'm working on.</p><a class="button button-primary" href="https://github.com/QuantumRads">GitHub / QuantumRads <span aria-hidden="true">↗</span></a></div>
-      </section>
-    </main>
-    <footer class="site-footer container"><p>© <span id="year">2026</span> Brandon Allison</p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
+    <div id="root"></div>
+    <noscript>This portfolio needs JavaScript. You can also find Brandon at <a href="https://github.com/QuantumRads">github.com/QuantumRads</a>.</noscript>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

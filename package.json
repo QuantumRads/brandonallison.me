@@ -1,16 +1,24 @@
 {
   "name": "brandonallison-portfolio",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "description": "Personal portfolio frontend for Brandon Allison",
+  "description": "React portfolio for Brandon Allison",
   "scripts": {
-    "dev": "node scripts/serve.mjs",
-    "preview": "node scripts/serve.mjs --dist",
-    "build": "node scripts/build.mjs",
-    "check": "node --check assets/theme.js && node --check assets/main.js && node --check scripts/serve.mjs && node --check scripts/build.mjs"
+    "dev": "vite",
+    "preview": "vite preview",
+    "build": "vite build",
+    "check": "node --check vite.config.js && node --check public/theme.js && node --check src/data/portfolio.js"
+  },
+  "dependencies": {
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.0.5",
+    "vite": "8.2.1"
   },
   "engines": {
-    "node": ">=22"
+    "node": ">=22.13.0"
   }
 }

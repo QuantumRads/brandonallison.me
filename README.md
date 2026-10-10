@@ -1,18 +1,19 @@
 # brandonallison.me
 
-Personal portfolio website for Brandon Allison. A responsive HTML, CSS, and JavaScript foundation with no third-party runtime dependencies.
+Brandon Allison's personal portfolio, built with **React 19 and Vite**. A responsive blue design with reusable components, light/dark themes, mobile navigation, and editable project content.
 
 ## Run locally
 
-Install Node.js 22 or newer, then run:
+Install Node.js 22.13 or newer, then run:
 
 ```sh
+npm ci
 npm run dev
 ```
 
-Open http://localhost:5173. No `npm install` is needed. Refresh the browser after editing a file.
+Open http://localhost:5173. Vite refreshes your changes while developing.
 
-## Check and build
+## Check, build, and preview
 
 ```sh
 npm run check
@@ -20,33 +21,48 @@ npm run build
 npm run preview
 ```
 
-The build copies the public site into `dist/`. Preview serves that output on the same port; stop the development server first. Set `PORT` to use another port.
+`check` validates the configuration and plain JavaScript files. The production build also compiles and validates the React JSX and imports. The static output is written to `dist/`; preview serves it at http://localhost:4173.
 
 ## Structure
 
 ```text
-index.html          Semantic page content and metadata
-assets/styles.css   Theme tokens, layout, and responsive styles
-assets/theme.js     Initial theme preference before the page paints
-assets/main.js      Theme toggle, mobile navigation, and footer year
-assets/favicon.svg  Initials favicon
-scripts/serve.mjs   Local static development/preview server
-scripts/build.mjs   Static production build
+src/
+  main.jsx                 React entry point
+  App.jsx                  Page composition
+  styles.css               Blue palette, themes, and responsive layouts
+  components/
+    Header.jsx             Floating navigation and theme control
+    Hero.jsx               Introduction and CSS identity artwork
+    About.jsx              Personal introduction
+    Projects.jsx           Project cards and coming-soon space
+    Contact.jsx            Contact links
+    Footer.jsx             Footer and back-to-top link
+    SectionHeading.jsx     Shared section heading
+    Icon.jsx               Shared SVG icons
+  data/portfolio.js        Profile, navigation, and project content
+  hooks/useTheme.js        React theme state and persistence
+public/
+  favicon.svg              Blue initials favicon
+  theme.js                 Initial theme before React loads
+index.html                 HTML shell and search metadata
+vite.config.js             React/Vite setup with relative asset paths
 ```
 
 ## Customize
 
-- Edit `index.html` to update the introduction, About text, project cards, and contact links. The portfolio is the first project; the second card is an explicit placeholder. No experience, credentials, or contact email are assumed.
-- Update CSS variables at the top of `assets/styles.css` to change colors. Light and dark themes are included; the visitor's choice is remembered when browser storage is available.
-- Duplicate the project article to add work, replacing its title, description, technologies, and link.
-- Add an email or other contact method to the Contact section when ready.
-- Replace `assets/favicon.svg` to change the favicon.
+- Edit `src/data/portfolio.js` for your profile, GitHub link, and projects. No work history, credentials, or email address are assumed.
+- Edit the individual React components for layout and section wording. The hero and project artwork are made in CSS and need no external images.
+- Change the theme variables in `src/styles.css` to adjust the palette.
+- Add a contact email or other links in `src/components/Contact.jsx` when ready.
+- Update the title and description in `index.html`, and replace `public/favicon.svg` if needed.
 
-Navigation and content remain usable without JavaScript. Keyboard focus styles, a skip link, a collapsible mobile menu, and reduced-motion support are included.
+The visitor's theme choice is remembered when browser storage is available. A skip link, keyboard focus states, an Escape-to-close mobile menu, and reduced-motion support are included.
 
 ## Hosting
 
-`dist/` is suitable for a static host, including GitHub Pages. All asset paths are relative, so the site can also work under a repository subpath. This starter does not enable hosting or configure domain DNS. When deploying to `brandonallison.me`, configure the custom domain with your host and DNS provider.
+Deploy the built **`dist/` folder**, rather than the source files, to a static host. Relative asset paths support a repository subpath as well as a custom domain. No routing server is needed for this single-page portfolio.
+
+Hosting and DNS for `brandonallison.me` are not configured by this starter. For GitHub Pages, use a build-based deployment that runs `npm ci` and `npm run build` and publishes `dist/`.
 
 ## License
 
