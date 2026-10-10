@@ -4,14 +4,14 @@ import Icon from './Icon.jsx';
 
 const groups = [
   { issuer: 'CompTIA', title: 'CompTIA', label: 'IT SUPPORT, NETWORKING & SECURITY' },
-  { issuer: 'Microsoft', title: 'Microsoft Technology Associate', label: 'MICROSOFT FUNDAMENTALS' },
+  { issuer: 'Microsoft', title: 'Microsoft Certifications', label: 'AZURE & TECHNOLOGY FUNDAMENTALS' },
 ];
 
 export default function Certifications() {
   return (
     <section className="section certifications-section container" id="certifications" aria-labelledby="certifications-title">
       <SectionHeading number="05" label="CERTIFICATIONS" title="A foundation in infrastructure & security." id="certifications-title" />
-      <p className="section-lead">Certifications earned across IT support, networking, systems administration, and security.</p>
+      <p className="section-lead">Certifications earned across IT support, networking, systems administration, cloud, and security.</p>
       <div className="certification-grid">
         {groups.map((group) => (
           <article className="certification-card" key={group.issuer} aria-labelledby={`certifications-${group.issuer.toLowerCase()}`}>
@@ -27,6 +27,7 @@ export default function Certifications() {
                 <li key={certification.id}>
                   <strong>{certification.title}</strong>
                   {certification.earned && <span>First earned {certification.earned}</span>}
+                  {certification.verificationUrl && <a className="text-link" href={certification.verificationUrl} target="_blank" rel="noopener noreferrer">Verify on Microsoft Learn <Icon name="arrow" size={14} /></a>}
                 </li>
               ))}
             </ul>

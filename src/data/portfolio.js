@@ -138,6 +138,7 @@ export const education = {
 // Historical earned dates from the resume; these do not imply current status.
 // The Server Administration year is incomplete in the source, so it is omitted.
 export const certifications = [
+  { id: 'azure-fundamentals', issuer: 'Microsoft', title: 'Microsoft Certified: Azure Fundamentals (AZ-900)', earned: 'December 1, 2022', verificationUrl: 'https://learn.microsoft.com/en-us/users/brandonallison/transcript/vp1gns1en60kw8j?source=docs' },
   { id: 'comptia-a-plus', issuer: 'CompTIA', title: 'CompTIA A+', earned: '2015' },
   { id: 'comptia-network-plus', issuer: 'CompTIA', title: 'CompTIA Network+', earned: '2017' },
   { id: 'comptia-security-plus', issuer: 'CompTIA', title: 'CompTIA Security+', earned: '2018' },
