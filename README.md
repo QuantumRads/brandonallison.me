@@ -1,6 +1,6 @@
 # brandonallison.me
 
-Brandon Allison's personal portfolio, built with **React 19 and Vite**. A responsive blue design with reusable components, light/dark themes, mobile navigation, and editable project content.
+Brandon Allison's professional portfolio, built with **React 19 and Vite**. A responsive blue site focused on network operations, Microsoft cloud, systems administration, migrations, and documentation, with light/dark themes and mobile navigation.
 
 ## View without npm
 
@@ -44,12 +44,15 @@ src/
     Header.jsx             Floating navigation and theme control
     Hero.jsx               Introduction and CSS identity artwork
     About.jsx              Personal introduction
-    Projects.jsx           Project cards and coming-soon space
+    Expertise.jsx          Current capabilities and technical focus
+    Experience.jsx         Optara and earlier technical roles
+    Projects.jsx           Earlier infrastructure work and personal projects
+    Education.jsx          Education and dated early credentials
     Contact.jsx            Contact links
     Footer.jsx             Footer and back-to-top link
     SectionHeading.jsx     Shared section heading
     Icon.jsx               Shared SVG icons
-  data/portfolio.js        Profile, navigation, and project content
+  data/portfolio.js        Profile, capabilities, experience, and project content
   hooks/useTheme.js        React theme state and persistence
 public/
   favicon.svg              Blue initials favicon
@@ -60,12 +63,14 @@ vite.config.js             React/Vite development configuration
 
 ## Customize
 
-- Edit `src/data/portfolio.js` for your profile, GitHub link, and projects. No work history, credentials, or email address are assumed.
+- Edit `src/data/portfolio.js` for your profile, GitHub link, capabilities, experience, projects, and education. The current Optara role comes from Brandon's update; earlier experience and projects come from his supplied resume.
 - Edit the individual React components for layout and section wording. The hero and project artwork are made in CSS and need no external images.
 - Change the theme variables in `src/styles.css` to adjust the palette.
 - Add a contact email or other links in `src/components/Contact.jsx` when ready.
 - Update the title and description in `src/index.html`, and replace `public/favicon.svg` if needed.
 - Run `npm run build` after edits to regenerate the page you open directly.
+
+Current-role start dates and the end date for VP Demand Creation Services need an update before displaying full employment ranges. Earlier certifications are labeled by earned year, rather than implying current certification status. A public contact email can be added when Brandon supplies one; the legacy resume's address, phone number, and email are not embedded in this site.
 
 The visitor's theme choice is remembered when browser storage is available. The theme control also works when local-file browser storage is restricted. A skip link, keyboard focus states, an Escape-to-close mobile menu, and reduced-motion support are included.
 

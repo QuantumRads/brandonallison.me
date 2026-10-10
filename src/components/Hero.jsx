@@ -10,7 +10,7 @@ function IdentityArtwork() {
       <div className="art-plate plate-back" />
       <div className="art-plate plate-middle" />
       <div className="art-plate plate-front">
-        <span className="plate-label">PERSONAL SPACE / 001</span>
+        <span className="plate-label">NETWORKS / CLOUD / SYSTEMS</span>
         <span className="plate-monogram">ba<span>.</span></span>
         <span className="plate-footer">
           {profile.firstName.toUpperCase()} {profile.lastName.toUpperCase()}
@@ -18,12 +18,12 @@ function IdentityArtwork() {
         </span>
       </div>
       <div className="art-chip code-chip">
-        <span className="chip-icon"><Icon name="code" size={18} /></span>
-        <div><strong>Made to evolve</strong><span>One idea at a time</span></div>
+        <span className="chip-icon"><Icon name="network" size={18} /></span>
+        <div><strong>{profile.title}</strong><span>{profile.company} / Managed services</span></div>
       </div>
       <div className="art-chip name-chip"><span className="chip-dot" />{profile.domain}</div>
-      <span className="art-coordinate coordinate-top">BA — 01</span>
-      <span className="art-coordinate coordinate-bottom">A WORK IN PROGRESS</span>
+      <span className="art-coordinate coordinate-top">INFRASTRUCTURE / OPERATIONS</span>
+      <span className="art-coordinate coordinate-bottom">FROM DESIGN TO DAILY SUPPORT</span>
     </div>
   );
 }
@@ -32,25 +32,18 @@ export default function Hero() {
   return (
     <section className="hero container" id="home" aria-labelledby="hero-title">
       <div className="hero-copy">
-        <p className="eyebrow hero-eyebrow">
-          <span className="blue-dot" />PERSONAL PORTFOLIO<span className="version">V.02</span>
-        </p>
+        <p className="eyebrow hero-eyebrow"><span className="blue-dot" />{profile.title.toUpperCase()} / {profile.company.toUpperCase()}</p>
         <h1 id="hero-title">{profile.firstName}<br /><span>{profile.lastName}.</span></h1>
         <p className="hero-description">{profile.intro}</p>
+        <ul className="hero-specialties" aria-label="Current areas of focus"><li>Networks</li><li>Microsoft 365</li><li>Azure</li><li>Intune</li></ul>
         <div className="hero-actions">
           <a className="button button-primary" href="#projects">Explore my work <Icon name="arrow" size={18} /></a>
-          <a className="button button-quiet" href="#about">A little about me <Icon name="down" size={16} /></a>
+          <a className="button button-quiet" href="#experience">My experience <Icon name="down" size={16} /></a>
         </div>
-        <a className="hero-social" href={profile.github}>
-          <Icon name="github" size={18} /><span>{profile.handle}</span>
-          <span className="social-rule" /><span className="social-caption">Find me on GitHub</span>
-        </a>
+        <a className="hero-social" href={profile.github}><Icon name="github" size={18} /><span>{profile.handle}</span><span className="social-rule" /><span className="social-caption">Find me on GitHub</span></a>
       </div>
       <IdentityArtwork />
-      <div className="hero-bottom">
-        <span>PROJECTS. EXPERIMENTS. POSSIBILITIES.</span>
-        <a href="#projects">Keep exploring <Icon name="down" size={13} /></a>
-      </div>
+      <div className="hero-bottom"><span>NETWORKS. CLOUD. SYSTEMS. OPERATIONS.</span><a href="#about">The work behind the title <Icon name="down" size={13} /></a></div>
     </section>
   );
 }
