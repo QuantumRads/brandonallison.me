@@ -4,7 +4,7 @@ Brandon Allison's professional portfolio, built with **React 19 and Vite**. A re
 
 ## View without npm
 
-Download or clone the repository and **double-click the root `index.html`**. It is a self-contained, compiled React page with its JavaScript, CSS, and favicon embedded. You do not need npm, a local server, or an internet connection to view it. External GitHub links still need an internet connection.
+Download or clone the repository and **double-click the root `index.html`**. It is a self-contained, compiled React page with its JavaScript, CSS, headshot, and favicon embedded. You do not need npm, a local server, or an internet connection to view it. External GitHub links still need an internet connection.
 
 The root `index.html` is generated. Edit the source files described below and rebuild when you want to change the page.
 
@@ -42,7 +42,7 @@ src/
   styles.css               Blue palette, themes, and responsive layouts
   components/
     Header.jsx             Floating navigation and theme control
-    Hero.jsx               Introduction and CSS identity artwork
+    Hero.jsx               Introduction and profile headshot
     About.jsx              Personal introduction
     Expertise.jsx          Current capabilities and technical focus
     Experience.jsx         Optara and earlier technical roles
@@ -53,6 +53,8 @@ src/
     Footer.jsx             Footer and back-to-top link
     SectionHeading.jsx     Shared section heading
     Icon.jsx               Shared SVG icons
+  assets/
+    brandon-allison.webp   Optimized profile headshot, embedded at build time
   data/portfolio.js        Profile, experience, projects, education, and certifications
   hooks/useTheme.js        React theme state and persistence
 public/
@@ -65,7 +67,7 @@ vite.config.js             React/Vite development configuration
 ## Customize
 
 - Edit `src/data/portfolio.js` for your profile, contact links, capabilities, experience, company name history, projects, education, and certifications. The current Optara role comes from Brandon's update; earlier experience and projects come from his supplied resume.
-- Edit the individual React components for layout and section wording. The hero and project artwork are made in CSS and need no external images.
+- Edit the individual React components for layout and section wording. The headshot is imported from `src/assets/brandon-allison.webp` and embedded in the generated HTML so it also displays offline.
 - Change the theme variables in `src/styles.css` to adjust the palette.
 - Update the email, LinkedIn, and GitHub URLs in `src/data/portfolio.js`; contact layout is in `src/components/Contact.jsx`.
 - Update the title and description in `src/index.html`, and replace `public/favicon.svg` if needed.
