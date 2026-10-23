@@ -52,7 +52,7 @@ svg { display: block; flex-shrink: 0; }
 .brand-mark { font-size: 29px; font-weight: 750; letter-spacing: -2px; }
 .brand-mark span { color: var(--accent); }
 .brand-name { font-size: 13px; font-weight: 550; letter-spacing: -.2px; }
-.site-nav { display: flex; align-items: center; gap: 24px; }
+.site-nav { display: flex; align-items: center; gap: 18px; }
 .site-nav a { font-size: 13px; color: var(--muted); transition: color 180ms; }
 .site-nav a:hover { color: var(--text); }
 .header-actions { display: flex; align-items: center; gap: 12px; }
@@ -134,6 +134,11 @@ h3 { font-size: 22px; font-weight: 560; line-height: 1.3; letter-spacing: -.035e
 .capability-card h3 { font-size: 17px; line-height: 1.4; margin: 20px 0 12px; }
 .capability-card > p { font-size: 13px; line-height: 1.8; color: var(--muted); margin-bottom: 20px; }
 .capability-card .tags { padding-top: 0; margin-top: auto; }
+.platform-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 19px; margin-top: 34px; }
+.platform-card { min-width: 0; padding: 25px; border: 1px solid var(--line); border-radius: 17px; background: var(--surface); }
+.platform-card h3 { font-size: 16px; line-height: 1.5; letter-spacing: -.02em; }
+.platform-tags { margin-top: 18px; }
+.platform-tags li { max-width: 100%; overflow-wrap: anywhere; color: var(--text); font-size: 12px; line-height: 1.6; padding: 6px 10px; }
 .experience-list { display: grid; gap: 19px; margin-top: 34px; }
 .experience-card { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 38px; padding: 31px; border: 1px solid var(--line); border-radius: 17px; background: var(--surface); }
 .current-role { border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); background: linear-gradient(135deg, color-mix(in srgb, var(--soft-blue) 25%, var(--surface)), var(--surface)); }
@@ -203,6 +208,7 @@ h3 { font-size: 22px; font-weight: 560; line-height: 1.3; letter-spacing: -.035e
   .brand-name { display: none; }
 }
 @media (max-width: 1000px) {
+  .platform-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .capability-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .work-metric { gap: 14px; }
   .work-metric strong { font-size: 36px; }
@@ -238,6 +244,8 @@ h3 { font-size: 22px; font-weight: 560; line-height: 1.3; letter-spacing: -.035e
   .site-nav a:hover { background: var(--surface-raised); }
 }
 @media (max-width: 700px) {
+  .platform-grid { grid-template-columns: 1fr; }
+  .platform-card { padding: 24px; }
   .capability-grid { grid-template-columns: 1fr; }
   .capability-card { padding: 24px; }
   .experience-card { grid-template-columns: 1fr; padding: 24px; gap: 24px; }

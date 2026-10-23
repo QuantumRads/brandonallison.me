@@ -20,7 +20,7 @@ function ProjectCard({ project, index }) {
 export default function Projects() {
   return (
     <section className="section projects-section container" id="projects" aria-labelledby="projects-title">
-      <div className="section-title-row"><SectionHeading number="04" label="SELECTED WORK" title="Infrastructure in practice." id="projects-title" /><span className="section-aside">Earlier professional work + personal projects</span></div>
+      <div className="section-title-row"><SectionHeading number="05" label="SELECTED WORK" title="Infrastructure in practice." id="projects-title" /><span className="section-aside">Earlier professional work + personal projects</span></div>
       <p className="work-intro">A selection of migrations, infrastructure changes, and lab work from my background, alongside the portfolio I'm building today.</p>
       <div className="project-grid">{projects.map((project, index) => <ProjectCard key={project.id} project={project} index={index} />)}</div>
     </section>

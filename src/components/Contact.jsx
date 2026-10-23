@@ -7,7 +7,7 @@ export default function Contact() {
       <div className="contact-card">
         <div className="contact-glow" aria-hidden="true" />
         <div className="contact-copy">
-          <p className="eyebrow"><span className="section-number">07</span>CONTACT</p>
+          <p className="eyebrow"><span className="section-number">08</span>CONTACT</p>
           <h2 id="contact-title">Let's connect<span>.</span></h2>
           <p>Get in touch or explore what I'm working on.</p>
         </div>

@@ -17,6 +17,7 @@ export const profile = {
 export const navigation = [
   { label: 'About', href: '#about' },
   { label: 'Expertise', href: '#expertise' },
+  { label: 'Platforms', href: '#platforms' },
   { label: 'Experience', href: '#experience' },
   { label: 'Work', href: '#projects' },
   { label: 'Certifications', href: '#certifications' },
@@ -54,6 +55,19 @@ export const capabilities = [
     description: 'Owning standard operating procedures and internal documentation for a small technical team.',
     technologies: ['SOPs', 'Internal documentation', 'Operations'],
   },
+];
+
+// Platforms and solutions reviewed and approved by Brandon.
+export const platforms = [
+  { id: 'cloud', title: 'Cloud & Collaboration', solutions: ['Microsoft 365', 'Microsoft Azure', 'Microsoft Exchange', 'SharePoint', 'OneDrive', 'Microsoft Teams'] },
+  { id: 'endpoints', title: 'Endpoint Management', solutions: ['Microsoft Intune', 'Windows Autopilot'] },
+  { id: 'identity', title: 'Identity & Security', solutions: ['Active Directory', 'Microsoft Entra ID', 'Group Policy', 'SentinelOne', 'Microsoft Defender', 'Webroot', 'Proofpoint', 'Cisco Duo'] },
+  { id: 'servers', title: 'Servers & Operating Systems', solutions: ['Windows Server', 'Ubuntu Server', 'Dell Servers'] },
+  { id: 'networking', title: 'Networking & Firewalls', solutions: ['WatchGuard', 'Cisco Catalyst', 'Cisco Meraki', 'SonicWall', 'Ubiquiti', 'Ruckus'] },
+  { id: 'virtualization', title: 'Virtualization & Storage', solutions: ['VMware', 'Hyper-V', 'Proxmox', 'StarWind vSAN'] },
+  { id: 'backup', title: 'Backup & Recovery', solutions: ['Acronis Cyber Protect', 'Veeam', 'Datto'] },
+  { id: 'automation', title: 'Scripting & Automation', solutions: ['PowerShell'] },
+  { id: 'operations', title: 'IT Operations & Documentation', solutions: ['ConnectWise RMM', 'ScreenConnect', 'IT Glue', 'SOP Development', 'Technical Documentation'] },
 ];
 
 export const experience = [

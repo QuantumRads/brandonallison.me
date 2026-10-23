@@ -4,7 +4,7 @@ import SectionHeading from './SectionHeading.jsx';
 export default function Experience() {
   return (
     <section className="section experience-section container" id="experience" aria-labelledby="experience-title">
-      <SectionHeading number="03" label="EXPERIENCE" title="Hands-on, across the stack." id="experience-title" />
+      <SectionHeading number="04" label="EXPERIENCE" title="Hands-on, across the stack." id="experience-title" />
       <div className="experience-list">
         {experience.map((role) => (
           <article className={`experience-card${role.current ? ' current-role' : ''}`} key={role.id}>

@@ -3,6 +3,7 @@ import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
 import About from './components/About.jsx';
 import Expertise from './components/Expertise.jsx';
+import Platforms from './components/Platforms.jsx';
 import Experience from './components/Experience.jsx';
 import Projects from './components/Projects.jsx';
 import Certifications from './components/Certifications.jsx';
@@ -16,7 +17,7 @@ export default function App() {
     <>
       <a className="skip-link" href="#main">Skip to content</a>
       <Header theme={theme} toggleTheme={toggleTheme} />
-      <main id="main" tabIndex={-1}><Hero /><About /><Expertise /><Experience /><Projects /><Certifications /><Education /><Contact /></main>
+      <main id="main" tabIndex={-1}><Hero /><About /><Expertise /><Platforms /><Experience /><Projects /><Certifications /><Education /><Contact /></main>
       <Footer />
     </>
   );

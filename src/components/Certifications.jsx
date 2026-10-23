@@ -10,7 +10,7 @@ const groups = [
 export default function Certifications() {
   return (
     <section className="section certifications-section container" id="certifications" aria-labelledby="certifications-title">
-      <SectionHeading number="05" label="CERTIFICATIONS" title="A foundation in infrastructure & security." id="certifications-title" />
+      <SectionHeading number="06" label="CERTIFICATIONS" title="A foundation in infrastructure & security." id="certifications-title" />
       <p className="section-lead">Certifications earned across IT support, networking, systems administration, cloud, and security.</p>
       <div className="certification-grid">
         {groups.map((group) => (
