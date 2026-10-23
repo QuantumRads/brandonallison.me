@@ -63,7 +63,7 @@ export const platforms = [
   { id: 'endpoints', title: 'Endpoint Management', solutions: ['Microsoft Intune', 'Windows Autopilot'] },
   { id: 'identity', title: 'Identity & Security', solutions: ['Active Directory', 'Microsoft Entra ID', 'Group Policy', 'SentinelOne', 'Microsoft Defender', 'Webroot', 'Proofpoint', 'Cisco Duo'] },
   { id: 'servers', title: 'Servers & Operating Systems', solutions: ['Windows Server', 'Ubuntu Server', 'Dell Servers'] },
-  { id: 'networking', title: 'Networking & Firewalls', solutions: ['WatchGuard', 'Cisco Catalyst', 'Cisco Meraki', 'SonicWall', 'Ubiquiti', 'Ruckus'] },
+  { id: 'networking', title: 'Networking & Firewalls', solutions: ['WatchGuard', 'Cisco Catalyst', 'Cisco Meraki', 'SonicWall', 'Ubiquiti', 'Ruckus', 'pfSense', 'OPNsense'] },
   { id: 'virtualization', title: 'Virtualization & Storage', solutions: ['VMware', 'Hyper-V', 'Proxmox', 'StarWind vSAN'] },
   { id: 'backup', title: 'Backup & Recovery', solutions: ['Acronis Cyber Protect', 'Veeam', 'Datto'] },
   { id: 'automation', title: 'Scripting & Automation', solutions: ['PowerShell'] },
